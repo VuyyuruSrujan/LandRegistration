@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "LandRegistry_backend": {
+      "main": "src/LandRegistry_backend/main.mo",
+      "type": "motoko"
+    },
+    "LandRegistry_frontend": {
+      "dependencies": [
+        "LandRegistry_backend"
+      ],
+      "source": [
+        "src/LandRegistry_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "LandRegistry_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
